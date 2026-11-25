@@ -80,6 +80,12 @@ a[href]:has(> span > svg):hover{translate:0 -2px}
   .sv-gal{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
   .sv-gal > *{grid-column:auto !important}
 }
+.zf-link{transition:color .2s ease}
+.zf-link:hover{color:#C7FF00 !important}
+.zf-soc{transition:background .2s ease,color .2s ease,border-color .2s ease}
+.zf-soc:hover{background:#C7FF00;color:#0B0B0B !important;border-color:#C7FF00 !important}
+@media (max-width: 1000px){.zf-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width: 600px){.zf-grid{grid-template-columns:repeat(1,minmax(0,1fr)) !important}}
 </style>
 <style>nav a{white-space:nowrap}</style>
 </head>
@@ -333,13 +339,66 @@ a[href]:has(> span > svg):hover{translate:0 -2px}
   </section>
 
   
-  <footer>
-    <div style="max-width: 1360px; margin: 0 auto; padding: 40px clamp(20px, 3vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
-      <img src="/assets/26a412a8c382976f06c410cec3586cbb.png" alt="Zela Boost — Digital Marketing Agency, since 2025" style="width: 220px; height: auto; display: block">
-      <div style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; font-weight: 600">
-        <a href="https://www.instagram.com/zelaboost/" target="_blank" rel="noopener" style="text-decoration: none">Instagram</a>
+  <footer class="zf" style="background: #0B0B0B; color: #F6F6F1; margin-top: 0">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 80px clamp(20px, 3vw, 40px) 0">
+      <div class="zf-grid" style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 0.8fr; gap: 48px">
+        <div style="display: flex; flex-direction: column; gap: 24px">
+          <img src="/assets/931c318d7ab530c3e09891c5f9cb2570.png" alt="Zela Boost, Digital Marketing Agency" style="width: 200px; height: auto; display: block">
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A39C; max-width: 340px">Paid ads, social media, websites, branding and AI, run as one growth system for brands in Pakistan and abroad.</p>
+          <div style="display: flex; flex-direction: column; gap: 14px">
+            <a class="zf-link" href="mailto:zelaboost@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; color: #F6F6F1; text-decoration: none; font-size: 15px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>zelaboost@gmail.com</a>
+            <a class="zf-link" href="https://wa.me/923148999344" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #F6F6F1; text-decoration: none; font-size: 15px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"></path></svg>+92 314 8999344</a>
+            <span style="display: inline-flex; align-items: center; gap: 10px; color: #F6F6F1; font-size: 15px; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C7FF00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Faisalabad, Pakistan</span>
+          </div>
+          <div style="display: flex; gap: 10px">
+            <a class="zf-soc" href="https://www.instagram.com/zelaboost/" target="_blank" rel="noopener" aria-label="Zela Boost on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; border: 1px solid #3A3A36; color: #F6F6F1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+            <a class="zf-soc" href="https://www.linkedin.com/company/zela-boost/" target="_blank" rel="noopener" aria-label="Zela Boost on LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 999px; border: 1px solid #3A3A36; color: #F6F6F1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10.5V16"></path><path d="M8 7.5v.01"></path><path d="M12 16v-3.5a2 2 0 0 1 4 0V16"></path><path d="M12 10.5V16"></path></svg></a>
+          </div>
+        </div>
+        <nav aria-label="Services">
+          <h2 style="margin: 0 0 18px; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C7FF00">Services</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+            <li><a class="zf-link" href="/Service-SocialMedia" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Social Media Marketing</a></li>
+            <li><a class="zf-link" href="/Service-PaidAds" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Paid Ads</a></li>
+            <li><a class="zf-link" href="/Service-WebDesign" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Web Design &amp; Development</a></li>
+            <li><a class="zf-link" href="/Service-Branding" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Branding</a></li>
+            <li><a class="zf-link" href="/Service-VideoEditing" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Video Editing</a></li>
+            <li><a class="zf-link" href="/Service-AIContent" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">AI Content Creation</a></li>
+            <li><a class="zf-link" href="/Service-AIAutomations" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">AI Automations</a></li>
+            <li><a class="zf-link" href="/Service-GraphicDesign" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Graphic Designing</a></li>
+            <li><a class="zf-link" href="/Service-LeadGeneration" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Lead Generation</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Case studies">
+          <h2 style="margin: 0 0 18px; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C7FF00">Case studies</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+            <li><a class="zf-link" href="/CaseStudy-TahseenSakina" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Tahseen Sakina</a></li>
+            <li><a class="zf-link" href="/CaseStudy-SilverCollection" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Silver Collection by M.A</a></li>
+            <li><a class="zf-link" href="/CaseStudy-AlKamil" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Al-Kamil Store</a></li>
+            <li><a class="zf-link" href="/CaseStudy-BlueDots" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">BlueDots Printery</a></li>
+            <li><a class="zf-link" href="/CaseStudy-ParamountCity" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Paramount City</a></li>
+            <li><a class="zf-link" href="/CaseStudy-Naxape" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">NAXAPE</a></li>
+            <li><a class="zf-link" href="/CaseStudy-NisarThreads" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Nisar Threads</a></li>
+            <li><a class="zf-link" href="/CaseStudy-RameenJewellery" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Rameen Sheikh Jewellers</a></li>
+            <li><a class="zf-link" href="/CaseStudy-AmnaFootwear" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Amna Naeem Footwear</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company">
+          <h2 style="margin: 0 0 18px; font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #C7FF00">Company</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+            <li><a class="zf-link" href="/#top" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Home</a></li>
+            <li><a class="zf-link" href="/#services" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Services</a></li>
+            <li><a class="zf-link" href="/#work" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Case studies</a></li>
+            <li><a class="zf-link" href="/#why" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Why Zela</a></li>
+            <li><a class="zf-link" href="/#contact" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Contact</a></li>
+            <li><a class="zf-link" href="https://calendly.com/usa9893/30min" style="color: #D9D9D2; text-decoration: none; font-size: 15px; line-height: 1.4">Book a strategy call</a></li>
+          </ul>
+        </nav>
       </div>
-      <span style="font-size: 13px; color: #5C5C55">© 2026 Zela Boost · Faisalabad, Pakistan</span>
+      <div style="margin-top: 64px; padding: 28px 0 32px; border-top: 1px solid #262624; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: 13px; color: #A3A39C">
+        <span>© 2026 Zela Boost · Faisalabad, Pakistan. All rights reserved.</span>
+        <a class="zf-link" href="#top" style="display: inline-flex; align-items: center; gap: 8px; color: #F6F6F1; text-decoration: none; font-weight: 600; min-height: 44px">Back to top <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="M6 11l6-6 6 6"></path></svg></a>
+      </div>
     </div>
   </footer>
 
